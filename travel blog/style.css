@@ -1,0 +1,200 @@
+@charset "utf=8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  padding-top: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+header {
+  background-image: url(image/lawn.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+/* 目次 */
+.menu {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 800px;
+  padding: 0 36px 0 0;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 40px;
+  color: white;
+  text-shadow: 1px 2px 2px gray;
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  margin: 200px 300px;
+  font-size: 100px;
+  color: white;
+  text-shadow: blue 1px 0 10px;
+}
+
+.pictures {
+  background-image: url("image/location.jpg");
+  background-attachment: fixed;
+  height: 70vh;
+  background-size: cover;
+}
+
+h2 {
+  width: 100%;
+  height: 300px;
+  font-size: 80px;
+  color: white;
+  text-shadow: blue 1px 0 10px;
+  text-align: center;
+}
+
+.animate {
+  display: inline-block;
+  margin-top: 160px;
+  animation: move-y 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+
+/* main */
+h3 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 24px;
+}
+
+.third {
+  width: 100%;
+  height: 240px;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.explanation1 {
+  width: calc((100% - 64px) / 3);
+  font-weight: bold;
+  box-shadow: 0 0 8px gainsboro;
+  margin: 32px 0;
+}
+
+.date {
+  text-align: right;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.small {
+  font-size: 24px;
+}
+
+.font{
+  font-size: 16px;
+}
+
+.picture {
+  background-image: url("image/location2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+h4 {
+  font-weight: 24px;
+  color: white;
+  text-shadow: rgb(226, 130, 226) 1px 0 10px;
+  font-size: 100px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+
+}
+
+.map {
+  width: 80%;
+  height: 80%;
+  padding:10px;
+  margin: 100px;
+  border:10px #dcb89f solid; 
+}
+
+
+/* 問い合わせ */
+ a.btn--blue {
+  color: #fff;
+  background-color: rgb(0, 135, 153);
+}
+
+a.btn--blue:hover {
+  color: #fff;
+  background: rgb(0, 135, 153);
+}
+
+a.btn--blue.btn--cubic {
+  border-bottom: 5px solid #002266;
+}
+
+a.btn--blue.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #002266;
+}
+
+a.btn-c {
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  padding: 16px 32px 16px 32px;
+}
+
+a.btn-c i.fa {
+  margin-right: 16px;
+}
+
+.inquery{
+  padding: 32px 500px 80px;
+}
+
+
+/* スクロールボタン */
+.to-pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 16px;
+  background-color: #8ecff7;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 2s ease;
+  cursor: pointer;
+}
+
+.to-pagetop.is-shown {
+  opacity: 1;
+}
